@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Cooking App</title>
   </head>
   <body>
-    <script src="js/scripts.js"></script>
+    <div class="container">
+          <h1>Cooking Unit Converter</h1>
 
+          <form id="conversion">
+            <div class="form-group">
+              <label for="grams">Enter the amount of grams you wish to convert:</label>
+              <input id="grams" type="number">
+            </div>
+
+            <button type="submit" class="btn btn-default">Find out!</button>
+          </form>
+
+          <div id="result">
+            <p>The amount in ounces is: <span class="grams"></span> </p>
+          </div>
+        </div>
   </body>
 </html>
